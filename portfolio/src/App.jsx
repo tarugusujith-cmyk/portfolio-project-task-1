@@ -3,12 +3,12 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectCard from "./components/ProjectCard";
 
-import Home from "./Pages/home";
-import About from "./Pages/About"; 
+import Home from "./Pages/Home";
+import About from "./Pages/About";
 import ProjectDetails from "./Pages/ProjectDetails";
-import Projects from "./pages/Projects";
+import Projects from "./Pages/Projects";
 import Gallery from "./Pages/Gallery";
-import Contact from "./pages/Contact";
+import Contact from "./Pages/Contact";
 
 
 function App() {
@@ -18,11 +18,11 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/project/:id" element={<ProjectDetails />} />
+        <Route path="/About" element={<About/>} />
+        <Route path="/Projects" element={<Projects />} />
+        <Route path="/Gallery" element={<Gallery />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/ProjectDetails/:id" element={<ProjectDetails />} />
       </Routes>
 
       <Footer />
